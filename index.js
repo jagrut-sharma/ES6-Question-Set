@@ -561,6 +561,7 @@ const userData2 = {
 console.log(printData(userData2)); // Pritam lives in India
 */
 
+/*
 // 15. Create a function which takes a product object and returns a sentence about the product using ES6 features.
 
 const printProductDetails = ({ name, specification: { capacity, size } }) =>
@@ -570,8 +571,28 @@ const product = {
   name: "Apple MacBook Air 2020",
   specification: {
     capacity: "256GB",
-    size: "13.3 Inch"
+    size: "13.3 Inch",
   },
-  price: 82900
+  price: 82900,
 };
 console.log(printProductDetails(product)); // Apple MacBook Air 2020 which is of 13.3 Inch, has a capacity of 256GB.
+*/
+
+// PRACTICE SET - 4:
+
+/*
+// 1. Write an ES6 function that accepts an array of integers and returns the maximum element in the array. Avoid using in-built methods.
+
+const getMaxElement = function (numArr) {
+  let [max] = numArr;
+  for (let i = 0; i < numArr.length; i++) {
+    if (numArr[i] > max) max = numArr[i];
+  }
+  return max;
+};
+
+let array = [4, 78, 8, 3, 6, 0, 12, 34];
+let array2 = [4, 78, 8, 3, 6, 112, 324, 52, 555];
+console.log(getMaxElement(array)); // 78
+console.log(getMaxElement(array2)); // 555
+*/
